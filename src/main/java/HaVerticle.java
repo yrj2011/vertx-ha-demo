@@ -28,6 +28,6 @@ public class HaVerticle extends AbstractVerticle {
         vertx.createHttpServer().requestHandler(req ->
                 req.response().end("Request served by " +
                         ManagementFactory.getRuntimeMXBean().getName() + "\n")
-        ).listen(8080);
+        ).listen(8088);
     }
 }
